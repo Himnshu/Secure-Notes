@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smochhtech.Securenotes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:icon="@drawable/salon_notes"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecurenotesActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name=".Registration_Profile"
+             android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="Login_Profile"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="Notes"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="Content"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="List_Notes"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="View_Content"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="Update"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity 
+            android:name="Trash"
+            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical" >
+    <ScrollView 
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+        >
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical" >
+  
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:text="Secure Notes"
+        android:textColor="#B22222"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6sp"
+        android:gravity="center"
+        android:text="Your User Name"
+        android:textColor="#B22222"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_fetchinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This User Name You Can Use For Other Device To Fetch Your Information"
+        android:textColor="#B22222"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:hint="Enter User Name" />
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="Set Password"
+        android:textColor="#B22222"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txt_confpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="Confirm Password"
+        android:textColor="#B22222"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_confpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:hint="ReEnter Password"
+        android:inputType="textPassword" />
+
+     <TextView
+        android:id="@+id/txt_mobno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="Enter Mobile NO: "
+        android:textColor="#B22222"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_mobno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:hint="Enter Mobile Number"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image_person"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/setimage" />
+
+        <TextView
+            android:id="@+id/txt_setimage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:text="Set Your Image"
+            android:textColor="#B22222"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            
+            android:drawableLeft="@drawable/tick"
+            android:text="Submit" 
+            android:background="#00CED1"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            
+            android:drawableLeft="@drawable/cross"
+            android:text="Cancel" 
+               android:background="#00CED1"/>
+    </LinearLayout> 
+     </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_loginuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textSize="25sp"
+            android:textColor="#00FFFF" />
+
+        <ImageView
+           
+            android:id="@+id/imgg_pro"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+             />
+    </LinearLayout>
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:gravity="bottom"
+    android:layout_weight="1.4"
+    android:background="@drawable/back">
+   
+        
+
+    <Button
+        android:layout_marginLeft="9dp"
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/sticky"
+        android:drawablePadding="5dp"
+        android:text="Add Notes"
+        android:layout_gravity="center"
+         android:background="#90EE90"
+        />
+
+    <Button
+        android:layout_marginLeft="8dp"
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/notee"
+        android:layout_gravity="center"
+        android:text="Your Notes"
+        android:background="#90EE90" />
+
+    
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_trash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:background="#90EE90"
+            android:drawableLeft="@drawable/trash"
+            android:text="trash"
+            android:gravity="center" />
+    </LinearLayout>
+    
+</LinearLayout>

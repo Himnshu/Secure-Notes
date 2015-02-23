@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#CD853F" >
+    <ScrollView 
+        android:layout_weight="1.5"
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+        
+    <LinearLayout 
+       
+       android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/txt_note"
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Name Of Note" 
+    android:textSize="30sp"
+    android:textColor="#780000"
+        />
+<EditText 
+     android:id="@+id/edt_note"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+android:hint=" your note name"
+    />
+<TextView 
+     android:id="@+id/txt_content"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:text="content"
+     android:textSize="30sp"
+    android:textColor="#780000"/>
+<EditText 
+     android:id="@+id/edt_content"
+       android:layout_width="fill_parent"
+    android:layout_height="300sp"
+android:hint="your note"
+android:gravity="top"
+android:textSize="20sp"/>
+</LinearLayout>
+</ScrollView>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+    android:orientation="horizontal">
+    
+    
+<Button  
+     android:id="@+id/btn_save"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="save"
+    android:layout_weight="1"
+    android:drawableLeft="@drawable/save"
+    />
+    
+<Button  
+     android:id="@+id/btn_cancel"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:layout_weight="1"
+    android:drawableLeft="@drawable/cross"
+    />   
+    
+    </LinearLayout>
+</LinearLayout>
